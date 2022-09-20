@@ -1,0 +1,13 @@
+Request Details:
+URL:https://demoqa.com/Account/v1/User/efd0b3c0-773d-4c07-9014-29e6114d0c4f
+Method:GET
+Headers:{Authorization=Basic dGVzdHVzZXIyMDA5MjAyMjEwMDQ0MTpUZXN0dXNlckAxMjM=, Accept=*/*, Content-Type=application/json}
+Cookies:{}
+Body:null
+Curl request:curl -v -X GET 'https://demoqa.com/Account/v1/User/efd0b3c0-773d-4c07-9014-29e6114d0c4f' -H 'Authorization: Basic dGVzdHVzZXIyMDA5MjAyMjEwMDQ0MTpUZXN0dXNlckAxMjM=' -H 'Accept: */*' -H 'Content-Type: application/json'
+Status code:401
+Response:
+{
+    "code": "1207",
+    "message": "User not found!"
+}
