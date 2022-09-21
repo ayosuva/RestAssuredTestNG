@@ -1,3 +1,5 @@
+package com.yosuva.examples;
+
 import io.qameta.allure.attachment.http.HttpRequestAttachment;
 import io.qameta.allure.attachment.http.HttpResponseAttachment;
 import io.restassured.filter.Filter;

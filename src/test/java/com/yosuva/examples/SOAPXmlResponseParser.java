@@ -1,3 +1,5 @@
+package com.yosuva.examples;
+
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.w3c.dom.Document;
