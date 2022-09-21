@@ -1,13 +1,22 @@
 Request Details:
-URL:https://demoqa.com/Account/v1/User/efd0b3c0-773d-4c07-9014-29e6114d0c4f
-Method:GET
-Headers:{Authorization=Basic dGVzdHVzZXIyMDA5MjAyMjEwMDQ0MTpUZXN0dXNlckAxMjM=, Accept=*/*, Content-Type=application/json}
+URL:https://www.w3schools.com/xml/tempconvert.asmx
+Method:POST
+Headers:{SOAPAction=https://www.w3schools.com/xml/FahrenheitToCelsius, Accept=*/*, Content-Type=text/xml; charset=ISO-8859-1}
 Cookies:{}
-Body:null
-Curl request:curl -v -X GET 'https://demoqa.com/Account/v1/User/efd0b3c0-773d-4c07-9014-29e6114d0c4f' -H 'Authorization: Basic dGVzdHVzZXIyMDA5MjAyMjEwMDQ0MTpUZXN0dXNlckAxMjM=' -H 'Accept: */*' -H 'Content-Type: application/json'
-Status code:401
+Body:<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <FahrenheitToCelsius xmlns="https://www.w3schools.com/xml/">
+      <Fahrenheit>100</Fahrenheit>
+    </FahrenheitToCelsius>
+  </soap:Body>
+</soap:Envelope>
+Curl request:curl -v -X POST 'https://www.w3schools.com/xml/tempconvert.asmx' -H 'SOAPAction: https://www.w3schools.com/xml/FahrenheitToCelsius' -H 'Accept: */*' -H 'Content-Type: text/xml; charset=ISO-8859-1' -d '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  <soap:Body>    <FahrenheitToCelsius xmlns="https://www.w3schools.com/xml/">      <Fahrenheit>100</Fahrenheit>    </FahrenheitToCelsius>  </soap:Body></soap:Envelope>'
+Status code:200
 Response:
-{
-    "code": "1207",
-    "message": "User not found!"
-}
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <FahrenheitToCelsiusResponse xmlns="https://www.w3schools.com/xml/">
+      <FahrenheitToCelsiusResult>37.7777777777778</FahrenheitToCelsiusResult>
+    </FahrenheitToCelsiusResponse>
+  </soap:Body>
+</soap:Envelope>
