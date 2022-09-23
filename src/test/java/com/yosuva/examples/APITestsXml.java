@@ -41,6 +41,7 @@ public class APITestsXml {
         System.out.println(soapResponseParser.getResponseValue(response,"FahrenheitToCelsiusResult"));
         Assert.assertEquals(soapResponseParser.getResponseValue(response,"FahrenheitToCelsiusResult"), "37.7777777777778");
         //response.path("Response.@type"); this is for normal xml response
+        //soapResponseParser.getResponseValue(response,"FahrenheitToCelsiusResult")// this is for soap xml response
     }
 
 
