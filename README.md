@@ -6,7 +6,7 @@ It is a RestAssured TestNG based API automation framework. It has most the reque
 
 JSON based requests and response handling
 
-Assertions
+TestNG Assertions
 
 XML or SOAP based requests and response handling
 
