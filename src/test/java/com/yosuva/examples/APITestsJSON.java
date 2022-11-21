@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 
 
 public class APITestsJSON {
-    String userName = "testuser12345";
+    String userName = "";
     String password = "Testuser@123";
     String userId = "";
 
